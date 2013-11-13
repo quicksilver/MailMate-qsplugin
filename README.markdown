@@ -1,12 +1,15 @@
 ## Building the MailMate plug-in ##
 
-In addition to the usual Quicksilver source, you'll need to have the E-mail Support plug-in and MailCore in specific relative places. The directory structure should look like this:
+In addition to the usual Quicksilver source, you'll need to have the [E-mail Support plug-in][1] and [MailCore][2] in specific relative places. The directory structure should look like this:
 
     MailMate-qsplugin/
     elements.support.mail/
     Support/MailCore/
 
 `MailMate-qsplugin` is the directory you cloned this repo into and can be safely renamed.
+
+[1]: https://github.com/quicksilver/elements.support.mail-qsplugin
+[2]: https://github.com/MailCore/MailCore
 
 About Quicksilver Plugins on Github
 ===================================
