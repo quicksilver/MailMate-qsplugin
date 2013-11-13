@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D496E8961831A4E800EFC7D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D496E8951831A4E800EFC7D2 /* Cocoa.framework */; };
+		D496E89C1831A4E800EFC7D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D496E89A1831A4E800EFC7D2 /* InfoPlist.strings */; };
+		D4A2B34D1832815E00747D7C /* QSMailMateMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A2B34C1832815E00747D7C /* QSMailMateMediator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D496E8921831A4E800EFC7D2 /* MailMate Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MailMate Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D496E8951831A4E800EFC7D2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D496E8991831A4E800EFC7D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D496E89B1831A4E800EFC7D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D496E89E1831A4E800EFC7D2 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		D496E89F1831A4E800EFC7D2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		D496E8A01831A4E800EFC7D2 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		D496E8A11831A4E800EFC7D2 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		D496E8A21831A4E800EFC7D2 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		D496E8A31831A4E800EFC7D2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		D4A2B34B1832815E00747D7C /* QSMailMateMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMailMateMediator.h; sourceTree = "<group>"; };
+		D4A2B34C1832815E00747D7C /* QSMailMateMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMailMateMediator.m; sourceTree = "<group>"; };
+		D4A2B34E1832820600747D7C /* QSMailMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSMailMediator.h; path = ../elements.support.mail/QSMailMediator.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D496E88F1831A4E800EFC7D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D496E8961831A4E800EFC7D2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D496E8881831A4E800EFC7D2 = {
+			isa = PBXGroup;
+			children = (
+				D496E8971831A4E800EFC7D2 /* QSMailMate */,
+				D496E8941831A4E800EFC7D2 /* Frameworks */,
+				D496E8931831A4E800EFC7D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D496E8931831A4E800EFC7D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D496E8921831A4E800EFC7D2 /* MailMate Plugin.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D496E8941831A4E800EFC7D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D496E8951831A4E800EFC7D2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D496E8971831A4E800EFC7D2 /* QSMailMate */ = {
+			isa = PBXGroup;
+			children = (
+				D4A2B34E1832820600747D7C /* QSMailMediator.h */,
+				D4A2B34B1832815E00747D7C /* QSMailMateMediator.h */,
+				D4A2B34C1832815E00747D7C /* QSMailMateMediator.m */,
+				D496E89D1831A4E800EFC7D2 /* Configuration */,
+				D496E8981831A4E800EFC7D2 /* Supporting Files */,
+			);
+			path = QSMailMate;
+			sourceTree = "<group>";
+		};
+		D496E8981831A4E800EFC7D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D496E8991831A4E800EFC7D2 /* Info.plist */,
+				D496E89A1831A4E800EFC7D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D496E89D1831A4E800EFC7D2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D496E89E1831A4E800EFC7D2 /* Common.xcconfig */,
+				D496E89F1831A4E800EFC7D2 /* Debug.xcconfig */,
+				D496E8A01831A4E800EFC7D2 /* Developer.xcconfig */,
+				D496E8A11831A4E800EFC7D2 /* QSPlugIn.xcconfig */,
+				D496E8A21831A4E800EFC7D2 /* Quicksilver.pch */,
+				D496E8A31831A4E800EFC7D2 /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D496E8911831A4E800EFC7D2 /* MailMate Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D496E8AE1831A4E800EFC7D2 /* Build configuration list for PBXNativeTarget "MailMate Plugin" */;
+			buildPhases = (
+				D496E88D1831A4E800EFC7D2 /* ShellScript */,
+				D496E88E1831A4E800EFC7D2 /* Sources */,
+				D496E88F1831A4E800EFC7D2 /* Frameworks */,
+				D496E8901831A4E800EFC7D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MailMate Plugin";
+			productName = QSMailMate;
+			productReference = D496E8921831A4E800EFC7D2 /* MailMate Plugin.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D496E8891831A4E800EFC7D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Skurfers' Alliance";
+			};
+			buildConfigurationList = D496E88C1831A4E800EFC7D2 /* Build configuration list for PBXProject "QSMailMate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D496E8881831A4E800EFC7D2;
+			productRefGroup = D496E8931831A4E800EFC7D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D496E8911831A4E800EFC7D2 /* MailMate Plugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D496E8901831A4E800EFC7D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D496E89C1831A4E800EFC7D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D496E88D1831A4E800EFC7D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D496E88E1831A4E800EFC7D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A2B34D1832815E00747D7C /* QSMailMateMediator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D496E89A1831A4E800EFC7D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D496E89B1831A4E800EFC7D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D496E8AC1831A4E800EFC7D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D496E89F1831A4E800EFC7D2 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D496E8AD1831A4E800EFC7D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D496E8A31831A4E800EFC7D2 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D496E8AF1831A4E800EFC7D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D496E8A11831A4E800EFC7D2 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					../Support/MailCore/Source,
+					"../Support/MailCore/libetpan/build-mac/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D496E8B01831A4E800EFC7D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D496E8A11831A4E800EFC7D2 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					../Support/MailCore/Source,
+					"../Support/MailCore/libetpan/build-mac/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D496E88C1831A4E800EFC7D2 /* Build configuration list for PBXProject "QSMailMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D496E8AC1831A4E800EFC7D2 /* Debug */,
+				D496E8AD1831A4E800EFC7D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D496E8AE1831A4E800EFC7D2 /* Build configuration list for PBXNativeTarget "MailMate Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D496E8AF1831A4E800EFC7D2 /* Debug */,
+				D496E8B01831A4E800EFC7D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D496E8891831A4E800EFC7D2 /* Project object */;
+}

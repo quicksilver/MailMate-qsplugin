@@ -1,0 +1,5 @@
+## MailMate ##
+
+This plug-in allows you to compose and send messages using MailMate. See the E-mail Support plug-in’s help for details.
+
+Be sure to choose MailMate under Preferences → Handlers.
